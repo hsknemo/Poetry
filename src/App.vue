@@ -6,10 +6,7 @@
 </template>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-}
+
 #app {
   max-width: 1920px;
   height: 100%;
@@ -30,6 +27,6 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgba(30, 30, 30, 1);;
 }
 </style>

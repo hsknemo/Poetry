@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'inter-normal';
+  src: url('./font/inter-normal.ttf')
+}
+
+@font-face {
+  font-family: 'inter-ita';
+  src: url('./font/inter-ita.ttf')
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+// 小于1920 宽度的媒体查询
+@media (max-width: 1800px) {
+  .blog_layout .main_body {
+    padding-left: 50px !important;
+
+  }
+
+  .blog_layout {
+    .main_body {
+      .moon_desc {
+        margin-left: 0;
+      }
+    }
+  }
+}
