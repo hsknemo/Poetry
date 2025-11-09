@@ -60,7 +60,7 @@ const rectArr = ref([
   },
   {
     topImg: 'c_moon2.png',
-    topText: 'Architectural Designer',
+    topText: 'Learning Designer',
     circleText: '3+ years',
     midImg: 'c_container2.png',
     clipShow: false,
@@ -112,7 +112,7 @@ const rectArr = ref([
   },
   {
     topImg: 'c_moon3.png',
-    topText: 'Architectural Designer',
+    topText: 'Flex-Ph.D Student',
     circleText: '2 years',
     midImg: 'c_container3.png',
     clipShow: false,
