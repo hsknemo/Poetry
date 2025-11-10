@@ -136,13 +136,13 @@ const botmDataStruct = ref([
         </div>
       </div>
 
-      <mid-four :isReverse="true" class="wow fadeInUp" />
+      <mid-four :isReverse="true" class="wow fadeInDown" />
 
-      <BigText class="botm_title wow fadeInUp" text="Architectural Research" />
+      <BigText class="botm_title wow fadeInDown" text="Architectural Research" />
 
-      <ita-text class="botm_ita_text wow fadeInUp" text="Design-based investigations from graduate studies" />
+      <ita-text class="botm_ita_text wow fadeInDown" text="Design-based investigations from graduate studies" />
 
-      <footer class="botm_footer_item wow fadeInUp">
+      <footer class="botm_footer_item wow fadeInDown">
         <div class="btm_item" :key="index" v-for="(item, index) in botmDataStruct">
           <img :src="item.img" alt="" />
           <big-text class="t_title tit" :text="item.t_tit" />
@@ -153,7 +153,7 @@ const botmDataStruct = ref([
         </div>
       </footer>
 
-      <mid-four class="wow fadeInUp" :isReverse="true" />
+      <mid-four class="wow fadeInDown" :isReverse="true" />
     </main>
   </div>
 </template>
