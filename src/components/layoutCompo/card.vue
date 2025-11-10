@@ -260,6 +260,11 @@ const getImg = (name) => {
     transform-origin: center;
     border-radius: 20px;
     box-shadow: 0px 9px 8px rgba(10, 10, 14, 0.72);
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
     &.isCipShow {
       transform: rotateY(180deg);
       .card_clip {
