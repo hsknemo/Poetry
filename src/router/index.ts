@@ -36,6 +36,15 @@ const router = createRouter({
       component: () => import('@/views/work/Institutional/index.vue'),
     },
     {
+      path: '/work/Residential',
+      name: 'work-Residential',
+      meta: {
+        title: 'Residential',
+        class: 'yellow',
+      },
+      component: () => import('@/views/work/Residential/index.vue'),
+    },
+    {
       path: '/contact',
       name: 'contact',
       meta: {
