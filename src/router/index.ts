@@ -74,6 +74,7 @@ const router = createRouter({
       name: 'learning',
       meta: {
         title: 'Learning',
+        class: 'dark-15'
       },
       component: () => import('@/views/learning/learning.vue'),
     },
