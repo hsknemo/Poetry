@@ -71,7 +71,7 @@ const rightDataStruct = ref([
     </dir-compo>
 
     <main class="article_body">
-      <article>
+      <article class="wow slideInLeft">
         <big-text class="top_title" text="Institutional"></big-text>
 
         <ita-text
@@ -111,7 +111,7 @@ const rightDataStruct = ref([
         </div>
       </article>
 
-      <section class="card_right">
+      <section class="card_right wow slideInRight">
         <div class="card_list">
           <div class="cart_item" :key="index" v-for="(item, index) in rightDataStruct">
             <big-text class="card_tit" :text="item.tit" />

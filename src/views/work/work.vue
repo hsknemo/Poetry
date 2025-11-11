@@ -140,7 +140,7 @@ const onJumpPage = (item: any) => {
         :text="'Software Skills'.toUpperCase()"
       ></BigText>
 
-      <div class="last_group_list">
+      <div class="last_group_list wow fadeInDown">
         <div class="last_group_list_item" v-for="(item, index) in softSkill">
           <big-text class="btom_title" :text="item.tit" />
           <big-text
