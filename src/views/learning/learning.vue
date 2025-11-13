@@ -8,7 +8,7 @@ import MidFour from '@/components/MidFour.vue'
 import IconPlay from '@/components/iconCompo/iconPlay.vue'
 import { reactive } from 'vue'
 const popControl = reactive({
-  show: true,
+  show: false,
 })
 const flowStruct = ref([
   {
@@ -91,6 +91,9 @@ const botmDivData = ref([
   }
 ])
 
+const onOpenVideo = () => {
+  popControl.show = true
+}
 </script>
 
 <template>
@@ -178,7 +181,7 @@ const botmDivData = ref([
 
 
 
-    <div class="video_btn wow fadeInDown">
+    <div @click="onOpenVideo" class="video_btn wow fadeInDown">
       <icon-play />
       <span> See Video Demo </span>
     </div>
