@@ -6,7 +6,10 @@ import FlowItem from '@/components/FlowItem.vue'
 import { getImg } from '@/utils/getImg.ts'
 import MidFour from '@/components/MidFour.vue'
 import IconPlay from '@/components/iconCompo/iconPlay.vue'
-
+import { reactive } from 'vue'
+const popControl = reactive({
+  show: true,
+})
 const flowStruct = ref([
   {
     name: 'Reel Arts ',
@@ -236,6 +239,24 @@ const botmDivData = ref([
 
     <mid-four  style="margin-top: 40px" class="wow fadeInDown" />
   </div>
+
+  <el-dialog
+    dark
+    draggable
+    overflow
+    :style="{
+    '--el-text-color-primary': '#fff',
+    '--el-dialog-bg-color': '#1d1d1d'
+    }"
+    class="tran_editor"
+    v-if="popControl.show"
+    v-model="popControl.show"
+    title="From Idea to Sharing"
+    :close-on-click-modal="false"
+    width="1350"
+  >
+    <iframe width="1311" height="737" src="https://www.youtube.com/embed/N82C_RjwdYE" title="From Idea to Sharing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </el-dialog>
 </template>
 
 <style scoped lang="scss">
@@ -471,6 +492,7 @@ const botmDivData = ref([
   }
 
   .video_btn {
+    cursor: pointer;
     @include flexStyle(center, center);
     width: 508px;
     height: 56px;
